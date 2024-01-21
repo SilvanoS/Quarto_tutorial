@@ -1,5 +1,5 @@
 ---
-title: "Andrea è figo"
+title: "varie prove"
 format:
   revealjs:
     footer: "[github.com/meghall06/neair](https://github.com/meghall06/neair)&nbsp;&nbsp;&nbsp;" 
@@ -20,4 +20,124 @@ Quarto enables you to weave together content and executable code into a finished
 1 + 1
 ```
 
-## Ma lunedi va via
+## slide test
+
+## Housekeeping
+
+<br/>
+
+-   Intro :wave:
+-   Workshop materials :arrow_down:
+-   Break :clock9:
+-   By the end of today :heavy_check_mark:
+-   Today's plan :clipboard:
+
+## Navigating RStudio
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+## Autoanimated
+
+
+
+
+<section data-auto-animate>
+::: {style="margin-top: 100px;"}
+Animating content
+:::
+</section>
+
+<section data-auto-animate>
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Animating content
+:::
+</section>
+
+
+
+## What is R?
+
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+<br> <br> <br> <br>
+
+::: {style="text-align: center"}
+R is an open-source ([**free**]{style="color:#cc0000"}!) scripting language for working with data
+:::
+
+
+## Navigating RStudio
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+::: {.absolute top="10%" left="0" width="1031" height="529"}
+::: {style="text-align: center"}
+![](RStudio1.png)
+:::
+:::
+
+::: {.absolute top="66%" left="55%"}
+::: {style="color: #cc0000"}
+project files are here
+:::
+:::
+
+. . .
+
+::: {.absolute top="28%" left="70%"}
+::: {style="color: #cc0000"}
+imported data shows up here
+:::
+:::
+
+. . .
+
+::: {.absolute top="50%" left="10%"}
+::: {style="color: #cc0000"}
+code *can* go here
+:::
+:::
+
+---
+
+
+## Today's data
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+```{r}
+#| echo: false
+library(tidyverse)
+faculty <- read_csv("faculty.csv")
+courses <- read_csv("courses.csv")
+opts <- options(knitr.kable.NA = "")
+```
+
+::: {style="text-align: center"}
+`faculty`
+:::
+
+<br>
+
+::: {style="font-size: 0.75em"}
+```{r}
+#| echo: false
+knitr::kable(faculty %>% head(6))
+```
+:::
