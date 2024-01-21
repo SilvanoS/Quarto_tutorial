@@ -1,5 +1,15 @@
 ---
-title: "Quarto_tutorial"
+title: "Andrea è figo"
+format:
+  revealjs:
+    footer: "[github.com/meghall06/neair](https://github.com/meghall06/neair)&nbsp;&nbsp;&nbsp;" 
+    theme: [moon, custom.scss]
+    preview-links: auto
+    chalkboard: 
+      boardmarker-width: 5
+from: markdown+emoji
+execute:
+  echo: true
 ---
 
 ## Quarto
@@ -9,3 +19,5 @@ Quarto enables you to weave together content and executable code into a finished
 ```{r}
 1 + 1
 ```
+
+## Ma lunedi va via
